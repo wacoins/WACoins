@@ -1,0 +1,2 @@
+debian/bin/wacoinsd usr/bin
+src/wacoinsd usr/lib/wacoins

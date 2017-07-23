@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=WACoins
+Comment=WACoins P2P Cryptocurrency
+Comment[fr]=WACoins, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=WACoins, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/wacoins-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/wacoins80.xpm
+MimeType=x-scheme-handler/wacoins;
+Categories=Office;

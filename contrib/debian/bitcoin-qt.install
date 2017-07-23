@@ -1,0 +1,6 @@
+debian/bin/wacoins-qt usr/bin
+wacoins-qt usr/lib/wacoins
+share/pixmaps/wacoins32.xpm usr/share/pixmaps
+share/pixmaps/wacoins80.xpm usr/share/pixmaps
+debian/wacoins-qt.desktop usr/share/applications
+debian/wacoins-qt.protocol usr/share/kde4/services/
