@@ -278,7 +278,7 @@ public:
     enum
     {
         PUBKEY_ADDRESS = 73,  // wacoins: addresses begin with 'W'
-        SCRIPT_ADDRESS = 3, // wacoins: addresses begin with 'w'
+        SCRIPT_ADDRESS = 3, // wacoins: addresses begin with '2'
         PUBKEY_ADDRESS_TEST = 81,
         SCRIPT_ADDRESS_TEST = 11,
     };

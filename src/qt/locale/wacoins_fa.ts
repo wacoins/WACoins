@@ -768,8 +768,8 @@ Address: %4
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="217"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly.  Most transactions are 1 kB.  Fee 0.02 recommended.</source>
-        <translation>نرخ اختیاری تراکنش هر کیلوبایت که به شما کمک می‌کند اطمینان پیدا کنید که تراکنش‌ها به سرعت پردازش می‌شوند.   بیشتر تراکنش‌ها ۱ کیلوبایت هستند.   نرخ 0.02 پیشنهاد می‌شود.</translation>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly.  Most transactions are 1 kB.  Fee 0.01 recommended.</source>
+        <translation>نرخ اختیاری تراکنش هر کیلوبایت که به شما کمک می‌کند اطمینان پیدا کنید که تراکنش‌ها به سرعت پردازش می‌شوند.   بیشتر تراکنش‌ها ۱ کیلوبایت هستند.   نرخ 0.01 پیشنهاد می‌شود.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
@@ -778,8 +778,8 @@ Address: %4
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="226"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.02 recommended.</source>
-        <translation>نرخ اختیاری تراکنش هر کیلوبایت که به شما کمک می‌کند اطمینان پیدا کنید که تراکنش‌ها به سرعت پردازش می‌شوند. بیشتر تراکنش‌ها ۱ کیلوبایت هستند. نرخ 0.02 پیشنهاد می‌شود.</translation>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>نرخ اختیاری تراکنش هر کیلوبایت که به شما کمک می‌کند اطمینان پیدا کنید که تراکنش‌ها به سرعت پردازش می‌شوند. بیشتر تراکنش‌ها ۱ کیلوبایت هستند. نرخ 0.01 پیشنهاد می‌شود.</translation>
     </message>
 </context>
 <context>

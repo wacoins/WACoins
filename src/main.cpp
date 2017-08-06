@@ -955,7 +955,7 @@ int64 GetProofOfWorkReward(int nHeight, unsigned int nBits)
     }
     
     if (fDebug && GetBoolArg("-printcreation"))
-        printf("GetProofOfWorkReward() : create=%s nBits=0x%08x nSubsidy=%" PRI64d "\n", FormatMoney(nSubsidy).c_str(), nBits, nSubsidy);
+        printf("GetProofOfWorkReward() : create=%s nBits=0x%08x nSubsidy=%" PRI64d " nHeight=%d\n", FormatMoney(nSubsidy).c_str(), nBits, nSubsidy, nHeight);
 
     return min(nSubsidy, MAX_MINT_PROOF_OF_WORK);
 }
@@ -1967,7 +1967,7 @@ bool CBlock::CheckBlock() const
 
     // Default height
     int nHeight = 0;
-    // Find prev block and get height+1
+    // Find prev block!=0 and get height+1
     if (hashPrevBlock != uint256(0))
     {
         map<uint256, CBlockIndex*>::iterator mi = mapBlockIndex.find(hashPrevBlock);
@@ -1976,14 +1976,14 @@ bool CBlock::CheckBlock() const
         if (pindex != NULL)
         {
             nHeight = pindex->nHeight + 1;
+            
+            // Check coinbase reward
+			if (vtx[0].GetValueOut() > (IsProofOfWork()? (GetProofOfWorkReward(nHeight, nBits) - vtx[0].GetMinFee() + MIN_TX_FEE) : 0))
+				return DoS(50, error("CheckBlock() : coinbase reward exceeded %s > %s", 
+				   FormatMoney(vtx[0].GetValueOut()).c_str(),
+				   FormatMoney(IsProofOfWork()? GetProofOfWorkReward(nHeight, nBits) : 0).c_str()));
         }
     }
-
-    // Check coinbase reward
-    if (vtx[0].GetValueOut() > (IsProofOfWork()? (GetProofOfWorkReward(nHeight, nBits) - vtx[0].GetMinFee() + MIN_TX_FEE) : 0))
-        return DoS(50, error("CheckBlock() : coinbase reward exceeded %s > %s", 
-                   FormatMoney(vtx[0].GetValueOut()).c_str(),
-                   FormatMoney(IsProofOfWork()? GetProofOfWorkReward(nHeight, nBits) : 0).c_str()));
 
     // Check transactions
     BOOST_FOREACH(const CTransaction& tx, vtx)

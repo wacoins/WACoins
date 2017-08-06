@@ -767,8 +767,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="217"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly.  Most transactions are 1 kB.  Fee 0.02 recommended.</source>
-        <translation>Neprivaloma sandorio mokestis už KB, kuris padeda įsitikinti, kad jūsų sandoriai tvarkomi greitai. Daugelis sandorių yra tik 1KB dydžio. Rekomenduojamas 0.02 mokestis.</translation>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly.  Most transactions are 1 kB.  Fee 0.01 recommended.</source>
+        <translation>Neprivaloma sandorio mokestis už KB, kuris padeda įsitikinti, kad jūsų sandoriai tvarkomi greitai. Daugelis sandorių yra tik 1KB dydžio. Rekomenduojamas 0.01 mokestis.</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="223"/>
@@ -777,8 +777,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location filename="../optionsdialog.cpp" line="226"/>
-        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.02 recommended.</source>
-        <translation>Neprivaloma sandorio mokestis už KB, kuris padeda įsitikinti, kad jūsų sandoriai tvarkomi greitai. Daugelis sandorių yra tik 1KB dydžio. Rekomenduojamas 0.02 mokestis.</translation>
+        <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB. Fee 0.01 recommended.</source>
+        <translation>Neprivaloma sandorio mokestis už KB, kuris padeda įsitikinti, kad jūsų sandoriai tvarkomi greitai. Daugelis sandorių yra tik 1KB dydžio. Rekomenduojamas 0.01 mokestis.</translation>
     </message>
 </context>
 <context>
